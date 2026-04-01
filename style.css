@@ -1,0 +1,93 @@
+/* --- 1. CONFIGURATION GÉNÉRALE --- */
+body {
+  background-color: #f7f9fc; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* --- 2. STRUCTURE (Le Container) --- */
+.container {
+  width: 700px;        /* Largeur fixe pour ordinateur */
+  margin: 40px auto;   /* Centre le container horizontalement */
+}
+
+/* Responsivité pour mobile */
+@media (max-width: 760px) {
+  .container {
+    width: 90%;        /* Prend presque toute la largeur sur petit écran */
+  }
+}
+
+/* --- 3. DESIGN DES CARTES (.card-white) --- */
+.card-white {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 25px; /* Espace entre chaque carte */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* L'ombre douce */
+  border-radius: 4px;
+  border: 1px solid #e0e0d5;
+}
+
+/* --- 4. CLASSES UTILITAIRES (Element-Design) --- */
+
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profile-img {
+  width: 150px;
+  height: 150px; /* On passe sur un carré pour un cercle parfait */
+  border: 1px solid #244d77;
+  padding: 4px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #244d77;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b35a2d;
+  margin-bottom: 15px;
+}
+
+.intro {
+  color: #555;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* --- 5. LIENS ET LISTES --- */
+a {
+  color: #244d77;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #b35a2d;
+  text-decoration: underline;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0 15px;
+}
